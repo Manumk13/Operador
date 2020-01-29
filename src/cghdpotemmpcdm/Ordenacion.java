@@ -7,39 +7,36 @@ public class Ordenacion {
 	static int b;
 	static int c;
 
-	public static void main(String[] args) {
-		System.out.println("Bienvenido a la app palindromo ");
-		ordena3( a , b , c );
-	}
 
-	public static void ordena3(int a ,int b , int c) {
+	
+	public static String ordena3(int a, int b, int c) {
 
-		Scanner teclado = new Scanner(System.in);
-		System.out.println("Primer número:");
-		a = teclado.nextInt();
-
-		System.out.println("Segundo número:");
-		b = teclado.nextInt();
-		System.out.println("Tercer número:");
-		c = teclado.nextInt();
-
+	
+		
 		System.out.println("Los números ordenados de mayor a menor son:");
 		if (a >= b && b >= c) {
-			System.out.println(" " + a + " " + b + " " + c + "");
+			String f = (a+">" + b +">"+c);
+			return f;
 		} else if (a >= c && c >= b) {
 
-			System.out.println(" " + a + " " + c + " " + b + "");
+			String f=(a+">" + c+">" + b );
+			return f;
 		} else if (b >= a && a >= c) {
 
-			System.out.println(" " + b + " " + a + " " + c + "");
-		} else if (b >= c && c >= a) {
+			String f=(b+">" +a+">"+ c );
+			return f;
+		} else if (b >c && c >a) {
 
-			System.out.println(" " + b + " " + c + " " + a + "");
+			String f=(b +">" + c +">" + a);
+			return f;
 		} else if (c >= a && a >= b) {
-
-			System.out.println(" " + c + " " + a + " " + b + "");
+ 
+			String f=(c+">" + a+">" +b);
+			return f;
 		} else {
-			System.out.println(" " + c + " " + b + " " + a + "");
+			String f=( c+">" + b +">" +a );
+			return f;
 		}
 	}
+
 }
