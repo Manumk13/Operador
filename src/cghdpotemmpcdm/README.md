@@ -15,3 +15,5 @@ cuarto commit and push
 añadimos las capturas de los casos de prueba y la cobertura ademas de la tablas de caso de prueba y  el readme
 
 
+poe ultimo en el quito commit añadimos el enlace
+https://github.com/Manumk13/Operador/commits/master
